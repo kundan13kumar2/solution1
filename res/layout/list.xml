@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="253dp"
+        android:layout_height="66dp"
+        android:layout_weight="0.25"
+        android:background="#3ab094"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/TitleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="2dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/SourceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/PriceLayout"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/PriceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TitleLayout"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="36dp"
+            android:textColor="#F2444A"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/UrlLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TitleLayout"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_alignRight="@+id/TitleLayout"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>
